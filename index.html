@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>H5-中国图片社</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/index.js" id="indexJs"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		
+		<script>
+			setRem();
+		</script>
+	</head>
+	<body>
+		<!--开机-->
+		<div class="wrap power">
+			<canvas id="c1" disable-scroll="true" style="display: block; overflow: hidden;"></canvas>
+			<div class="logo-area">
+				<img src="images/logo_img.png" alt="" class="logo">
+				<div class="logo-name">
+					<div class="logo-china">
+						<img src="images/logo_zhong.png" alt="">
+						<img src="images/logo_guo.png" alt="">
+						<img src="images/logo_tu.png" alt="">
+						<img src="images/logo_pian.png" alt="">
+					</div>
+					<img class="logo-en" src="images/logo_en.png" alt="">
+				</div>
+			</div>
+			
+			<div class="company-name">
+				<h3>中</h3>
+				<h3>国</h3>
+				<h3>图</h3>
+				<h3>片</h3>
+				<h3>社</h3>
+			</div>
+			
+			<i class="shan"></i>
+			
+			<span class="icon-dowm">精彩刮出来</span>
+		</div>
+		
+		
+		<div class="swiper-container" id="allWrap">
+		    <div class="swiper-wrapper">
+				<div data-background="images/jieshao_bg.jpg" class="swiper-slide jieshao-bg swiper-lazy">
+					<div class="company-img"></div>
+					<header class="header-title"></header>	
+					<div id="hide-zoon"></div>	
+					<span class="icon-up"></span>
+				</div>
+				
+				<div data-background="images/fazhan_bg.jpg" class="swiper-slide fazhan-bg swiper-lazy">
+					<header class="header-title2"></header>	
+					<!--<i class="line"></i>-->
+					<i class="icon-pen"></i>
+					<ul class="list">
+						<li class="clearfix">
+							<i>2020年</i>
+							<span>中国图片社75周年</span>
+						</li>
+						<li class="clearfix">
+							<i>2010年</i>
+							<span>中国图片社75周年中国图片社75周年</span>
+						</li>
+						<li class="clearfix">
+							<i>2000年</i>
+							<span>中国图片社75周年</span>
+						</li>
+						<li class="clearfix">
+							<i>1990年</i>
+							<span>中国图片社75周年中国图片社75周年</span>
+						</li>
+						<li class="clearfix">
+							<i>198年</i>
+							<span>中国图片社75周年</span>
+						</li>
+						<li class="clearfix">
+							<i>1970年</i>
+							<span>中国图片社75周年中国图片社75周年</span>
+						</li>
+						<li class="clearfix">
+							<i>1960年</i>
+							<span>中国图片社75周年中国图片社75周年</span>
+						</li>
+					</ul>
+					<span class="icon-up"></span>
+				</div>
+				
+				<div data-background="images/wenhua_bg.jpg" class="swiper-slide wenhua-bg swiper-lazy">
+					<header class="header-title"></header>	
+					<div class="big-title">
+						<div class="title">历</div>
+						<div class="title">史</div>
+						<div class="title">悠</div>
+						<div class="title">久</div>
+					</div>
+					<div class="desc">
+						<p>创建于一九五零年</p>
+						<p>新华通讯社直属企业和国家级图片社</p>
+						<p>打造国内领先 世界一流的综合影像服务机构</p>
+					</div>
+					<span class="fly-bg"></span>
+					<span class="icon-up"></span>
+				</div>
+				
+		        <div data-background="images/yewu_bg.jpg" class="swiper-slide yewu-bg swiper-lazy">
+					<header class="header-title"></header>
+					<div class="show-wrap">
+						<div class="swiper-container" id="show">    
+							<div class="swiper-wrapper">      
+								<div class="swiper-slide">
+									<div class="show-item">
+										<div class="flip-box" abc="true">
+											<span class="icon-click"></span>
+											<div class="flip-item flip-item-front"> 
+												<img src="images/flip_img01.jpg" alt="">
+											</div>
+											<div class="flip-item flip-item-back">
+												<div>
+													<p>摄影世界</p>
+													<p>图片大展</p>
+													<p>国际传播</p>
+													<p>新华数讯</p>
+												</div>
+												
+											</div>
+										</div>
+										<h5>影像传播</h5>
+									</div>
+								</div>      
+								<div class="swiper-slide">
+									<div class="show-item">
+										<div class="flip-box" abc="true">
+											<span class="icon-click"></span>
+											<div class="flip-item flip-item-front"> 
+												<img src="images/flip_img02.jpg" alt="">
+											</div>
+											<div class="flip-item flip-item-back">
+												<div>
+													<p>中国全球图片总汇</p>
+													<p>中国影像版权平台</p>
+													<p>新华微视</p>
+												</div>
+											</div>
+										</div>
+										<h5>版权服务</h5>
+									</div>
+								</div>      
+								<div class="swiper-slide">
+									<div class="show-item">
+										<div class="flip-box" abc="true">
+											<span class="icon-click"></span>
+											<div class="flip-item flip-item-front"> 
+												<img src="images/flip_img03.png" alt="">
+											</div>
+											<div class="flip-item flip-item-back">
+												<div>
+													<p>摄影培训</p>
+													<p>人像拍摄</p>
+													<p>定制拍摄</p>
+													<p>扫描修复</p>
+													<p>制作装裱</p>
+												</div>
+											</div>
+										</div>
+										<h5>影像服务</h5>
+									</div>
+								</div> 
+								<div class="swiper-slide">
+									<div class="show-item">
+										<div class="flip-box" abc="true">
+											<span class="icon-click"></span>
+											<div class="flip-item flip-item-front"> 
+												<img src="images/flip_img04.jpg" alt="">
+											</div>
+											<div class="flip-item flip-item-back">
+												<div>
+													<p>大学生图像采集</p>
+												</div>
+											</div>
+										</div>
+										<h5>图像采集</h5>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="show-item">
+										<div class="flip-box" abc="true">
+											<span class="icon-click"></span>
+											<div class="flip-item flip-item-front"> 
+												<img src="images/flip_img05.jpg" alt="">
+											</div>
+											<div class="flip-item flip-item-back">
+												<div>
+													<p>光与影的传播，文化与价值的传播</p>
+												</div>
+											</div>
+										</div>
+										<h5>新华影像APP</h5>
+									</div>
+								</div> 
+							</div>    
+							<!-- Add Pagination -->    
+							<div class="swiper-pagination">
+							</div>  
+						</div>
+					</div>
+					<span class="icon-up"></span>
+				</div>
+		
+				<div data-background="images/lianxi_bg.jpg" class="swiper-slide lianxi-bg swiper-lazy">
+					<header class="header-title"></header>
+					
+					<div class="info">
+						<div class="bottomText">
+							<div class="bottomBorder"></div>
+							<div class="sideBorder leftSide"></div>
+							<div class="sideBorder rightSide"></div>
+							<div class="topBorder leftSide"></div>
+							<div class="topBorder rightSide"></div>
+							<p class="bottomTextSpanBox">
+								<em>
+									<span>电 话：010-63076129</span>
+									<span>传 真：010-63072207</span>
+									<span>地 址：北京市西城区宣武门外大街甲1号环球财讯中心</span>
+								</em>
+							</p>
+							<i class="icon-light"></i>
+						</div>
+						
+						<div class="contact">
+							<img class="ewm" src="images/ewm.png"/>
+							<div>
+								<p>更多信息请访问图片社官网</p>
+								<p>www.chnphoto.cn</p>
+								<p>扫描二维码关注新华影像</p>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-people"></div>
+					<span class="icon-up"></span>
+				</div>
+		    </div>
+		</div>
+		
+		<!--音乐-->
+		<div class="icon-music">
+			<audio id="music" src="images/Dream.mp3" loop></audio>
+		</div>
+		
+		<!--底部扇形导航-->
+		<div id="menu">	
+			<div id="menu_list">  
+				<img src="images/icon_jieshao.png" alt="" />  
+				<img src="images/icon_licheng.png" alt="" />  
+				<img src="images/icon_wenhua.png" alt="" />  
+				<img src="images/icon_yewu.png" alt="" />  
+				<img src="images/icon_lianxi.png" alt=""/>        
+			</div>	
+			<div id="home"></div>
+		</div>
+	</body>
+</html>
