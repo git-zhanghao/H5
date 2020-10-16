@@ -575,16 +575,7 @@ $(function() {
 		
 		
 	}
-	
-	var bOff = true;
-	$('.icon-music').on('touchstart',function(){
-		if(bOff){
-			$('#music').get(0).play();
-		}else{
-			$('#music').get(0).pause();
-		}
-		bOff = !bOff;
-	})
+
 	
 	function playMusic(){
 		var $music = $('.icon-music');
