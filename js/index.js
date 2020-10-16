@@ -159,8 +159,8 @@ $(function() {
 							$('.power').animate({opacity:0},1000,function(){
 								$(this).remove();
 								oneScreen();
-								playMusic();
 							});
+							playMusic();
 						}
 						$c.off('.move');
 					});
@@ -576,8 +576,32 @@ $(function() {
 		
 	}
 	
+	var bOff = true;
+	$('.icon-music').on('touchstart',function(){
+		if(bOff){
+			$('#music').get(0).play();
+		}else{
+			$('#music').get(0).pause();
+		}
+		bOff = !bOff;
+	})
+	
 	function playMusic(){
-		$('#music').get(0).play();
+		var $music = $('.icon-music');
+		var $a1 = $('#music');
+		var onoff = true;
+		$music.on('touchstart',function(){
+			if(onoff){
+				$(this).addClass('active');
+				$a1.get(0).play();
+			}
+			else{
+				$(this).removeClass('active');
+				$a1.get(0).pause();
+			}
+			onoff = !onoff;
+		});
+		$music.trigger('touchstart');
 	}
 	
 });
