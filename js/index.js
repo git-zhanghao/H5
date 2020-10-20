@@ -160,7 +160,9 @@ $(function() {
 								$(this).remove();
 								oneScreen();
 							});
-							playMusic();
+							
+//							playMusic();
+							
 						}
 						$c.off('.move');
 					});
@@ -576,23 +578,29 @@ $(function() {
 		
 	}
 
+
+//	function playMusic(){
+//		var $music = $('.icon-music');
+//		var $a1 = $('#music');
+//		var onoff = true;
+//		$music.on('touchstart',function(){
+//			if(onoff){
+//				$(this).addClass('active');
+//				$a1.get(0).play();
+//			}
+//			else{
+//				$(this).removeClass('active');
+//				$a1.get(0).pause();
+//			}
+//			onoff = !onoff;
+//		});
+//		$music.trigger('touchstart');
+//	}
 	
-	function playMusic(){
-		var $music = $('.icon-music');
-		var $a1 = $('#music');
-		var onoff = true;
-		$music.on('touchstart',function(){
-			if(onoff){
-				$(this).addClass('active');
-				$a1.get(0).play();
-			}
-			else{
-				$(this).removeClass('active');
-				$a1.get(0).pause();
-			}
-			onoff = !onoff;
-		});
-		$music.trigger('touchstart');
-	}
+	document.addEventListener("WeixinJSBridgeReady", function () { 
+		 document.getElementById('music').play(); //视频自动播放
+	}, false); 
+	
 	
 });
+

@@ -682,10 +682,8 @@ img {
   right: 0.4rem;
   top: 0.4rem;
   -webkit-transform: rotate(0deg);
-  z-index: 999;
-}
-.icon-music.active {
   -webkit-animation: myRotate 5s linear infinite;
+  z-index: 99999;
 }
 @keyframes myRotate {
   to {

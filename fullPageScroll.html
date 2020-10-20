@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			html,body{
+				height: 100%;
+			}
+			.list{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				scroll-snap-type: y mandatory;	/*滚动视觉差*/
+				
+			}
+			
+			.list li{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				scroll-snap-align: start;	/*整屏滚动的时候,会停留在开始的那个图*/
+				background-blend-mode: multiply;	/*背景图层的混合模式(multiply正片叠底)*/
+			}
+			.list li:nth-of-type(1){
+				background: url(img01.jpg) #007AFF no-repeat;
+				background-size: cover;
+				background-attachment: fixed;	/*背景图不会随着滚动而滚动*/
+			}
+			.list li:nth-of-type(2){
+				background: url(img02.jpg) #ccc no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.list li:nth-of-type(3){
+				background: url(img03.jpg) #B40000 no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.list li:nth-of-type(4){
+				background: url(img04.jpg) #333333 no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.list li div{
+				position: absolute;
+				left: 100px;
+				bottom: 100px;
+				width: 500px;
+			}
+			.list li div h3{
+				background: #fff;
+				padding: 10px;
+				margin-bottom: 5px;
+			}
+			.list li div p{
+				background: #fff;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list">
+			<li>
+				<div>
+					<h3>我是标题1</h3>
+					<p>我是内容1我是内容1我是内容1我是内容1我是内容1我是内容1我是内容1我是内容1</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>我是标题2</h3>
+					<p>我是内容2我是内容2我是内容2我是内容2我是内容2我是内容2我是内容2我是内容2我是内容2</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>我是标题3</h3>
+					<p>我是内容3我是内容3我是内容3我是内容3我是内容3我是内容3我是内容3我是内容3我是内容3我是内容3</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h3>我是标题4</h3>
+					<p>我是内容4我是内容4我是内容4我是内容4我是内容4我是内容4我是内容4我是内容4我是内容4我是内容4我是内容4</p>
+				</div>
+			</li>
+		</ul>
+	</body>
+</html>
